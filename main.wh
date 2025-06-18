@@ -1,0 +1,5 @@
+#!/usr/bin/env whee
+=== WHEE ===
+package main;
+
+importrs std::process::Command;
