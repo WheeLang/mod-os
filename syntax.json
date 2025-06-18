@@ -1,0 +1,7 @@
+{
+  "system_command": {
+    "type": "function",
+    "pattern": "system\\(\"(.*?)\"\\);",
+    "replacement": "std::process::Command::new(\"sh\").arg(\"-c\").arg(\"\\1\").status().unwrap();"
+  }
+}
